@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
 
-<body>
+    <style>
+        form .info label{
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+  </head>
+  <body>
     <header></header>
     <main>
-        <section>
-            <h1>Pitha List</h1>
-            <form action="">
-                <label for="">Your Name</label>
-                <input type="text" name="" id="">
+      <section>
+        <h1>Pitha List</h1>
+        <form action="">
+          <fieldset class="info">
+            <legend>Basic Info</legend>
+               <label for="">Your Name</label>
+              <input type="text" name="" id="" />
 
-                <label for="email" name="" id="" ></label>
-                <input type="email" name="" id="">
+              <label for="email" name="" id="">Email</label>
+              <input type="email" name="" id="" />
+          </fieldset>
 
+          <br />
+          <fieldset>
+            <legend>Pitha Info</legend>
 
-    
-            </form>
-        </section>
+            <input type="radio" name="" id="Chitoy" />
+            <label for="Chitoy">Chitoy Pitha</label>
+
+            <input type="radio" name="" id="Vapa" />
+            <label for="Vapa">Vapa Pitha</label>
+
+            <input type="radio" name="" id="dal puri" />
+            <label for="dal puri">dal puri</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Vorta Selection</legend>
+            <input type="checkbox" name="" id="Shorisha" />
+            <label for="Shorisha">Shorisha</label>
+
+            <input type="checkbox" name="" id="Shutki" />
+            <label for="Shutki">Shutki</label>
+
+            <input type="checkbox" name="" id="Morich" />
+            <label for="Morich">Morich</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Extra info</legend>
+            <textarea cols="50" rows="5" id=""></textarea>
+          </fieldset>
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Clear" />
+        </form>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
